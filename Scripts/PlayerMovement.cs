@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        
     }
 
     // Update is called once per frame

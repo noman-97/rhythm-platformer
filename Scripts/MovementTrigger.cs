@@ -11,6 +11,7 @@ public class MovementTrigger : MonoBehaviour
     public GameObject[] movingTags;
 
     private GameObject player;
+    private GameObject player2;
     private GameObject bgm;
     
 
@@ -19,7 +20,8 @@ public class MovementTrigger : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         bgm = GameObject.FindGameObjectWithTag("BackgroundMusic");
-   
+        player2 = GameObject.FindGameObjectWithTag("Player2");
+
     }
 
 
@@ -33,7 +35,8 @@ public class MovementTrigger : MonoBehaviour
             movingTags = GameObject.FindGameObjectsWithTag("Moving");
 
             player.GetComponent<BackwardMovement>().startMovement();
-            
+            player2.GetComponent<BackwardMovement>().startMovement();
+
             bgm.GetComponent<StartMusic>().startMusic();
 
 
